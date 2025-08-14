@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nutri Jardim - Cardápio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Nutri Jardim</h1>
+    <p>Tabela nutricional do almoço da escola Silva Jardim</p>
+  </header>
+
+  <section id="info-dia">
+    <h2 id="data-hoje"></h2>
+  </section>
+
+  <section id="busca-filtro">
+    <input type="text" id="input-busca" placeholder="Buscar prato..." />
+  </section>
+
+  <section id="cardapio-section">
+    <table id="cardapio" class="tabela-cardapio">
+      <thead>
+        <tr>
+          <th>Prato</th>
+          <th>Calorias</th>
+          <th>Proteínas (g)</th>
+          <th>Carboidratos (g)</th>
+          <th>Gorduras (g)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Linhas do cardápio são inseridas aqui via JS -->
+      </tbody>
+    </table>
+  </section>
+
+  <section id="comentarios-container">
+    <h2>Comentários</h2>
+    <form id="form-comentarios">
+      <label for="input-nome">Nome:</label>
+      <input type="text" id="input-nome" required />
+
+      <label for="input-avaliacao">Avaliação (1 a 5):</label>
+      <select id="input-avaliacao" required>
+        <option value="">Selecione</option>
+        <option value="1">1 ⭐</option>
+        <option value="2">2 ⭐⭐</option>
+        <option value="3">3 ⭐⭐⭐</option>
+        <option value="4">4 ⭐⭐⭐⭐</option>
+        <option value="5">5 ⭐⭐⭐⭐⭐</option>
+      </select>
+
+      <label for="input-comentario">Comentário:</label>
+      <textarea id="input-comentario" rows="4" required></textarea>
+
+      <button type="submit">Enviar Comentário</button>
+    </form>
+
+    <div id="lista-comentarios">Nenhum comentário ainda.</div>
+  </section>
+
+  <footer>
+    <p>© 2025 Escola Silva Jardim - Nutri Jardim</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+<!-- Administração de Comentários -->
+<section id="admin-comentarios" style="display:none; max-width:700px; margin: 40px auto; background:#f0f9f0; padding:30px; border-radius:15px; box-shadow: 0 6px 18px rgba(46,125,50,0.1);">
+  <h2>Administração de Comentários</h2>
+  
+  <label for="senha-admin">Senha de administrador:</label>
+  <input type="password" id="senha-admin" placeholder="Digite a senha" style="width:100%; padding:10px; margin: 8px 0 20px; border-radius:10px; border:1px solid #ccc;" />
+  <button id="btn-login" style="padding:10px 20px; background:#2e7d32; color:#fff; border:none; border-radius:10px; cursor:pointer;">Entrar</button>
+
+  <div id="admin-lista-comentarios" style="margin-top:30px; max-height: 350px; overflow-y:auto;"></div>
+</section>
+
+<!-- Botão fixo para abrir administração -->
+<button id="btn-toggle-admin" style="position: fixed; bottom: 20px; right: 20px; padding: 12px 18px; background: #388e3c; color: white; border: none; border-radius: 30px; cursor: pointer; box-shadow: 0 4px 10px rgba(56, 142, 60, 0.6); font-weight: 700;">
+  Administração
+</button>
+
+</body>
+</html>
