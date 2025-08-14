@@ -1,25 +1,28 @@
 {
   "alimentos": [
     {
-      "nome": "Arroz com feijão",
-      "calorias": 250,
-      "proteinas": 8,
-      "carboidratos": 45,
-      "gorduras": 3
+      "nome": "Arroz Integral",
+      "calorias": 180,
+      "proteinas": 4,
+      "carboidratos": 37,
+      "gorduras": 1,
+      "tipo": "Massa"
     },
     {
-      "nome": "Frango grelhado",
-      "calorias": 180,
+      "nome": "Frango Grelhado",
+      "calorias": 250,
       "proteinas": 30,
       "carboidratos": 0,
-      "gorduras": 5
+      "gorduras": 10,
+      "tipo": "Carne"
     },
     {
-      "nome": "Salada verde",
+      "nome": "Salada de Alface",
       "calorias": 50,
       "proteinas": 2,
-      "carboidratos": 8,
-      "gorduras": 0
+      "carboidratos": 4,
+      "gorduras": 0,
+      "tipo": "Vegetal"
     }
   ]
 }
