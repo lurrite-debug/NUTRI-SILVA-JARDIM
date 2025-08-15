@@ -8,17 +8,19 @@
   background-color: #f9fbf9;
 }
 
-body {
-  max-width: 900px;
-  margin: 50px auto 80px;
-  padding: 0 24px 60px;
-  background-color: #ffffff;
-  border-radius: 16px;
-  box-shadow: 0 8px 24px rgba(46, 125, 50, 0.12);
-  transition: background-color 0.3s ease, color 0.3s ease;
+html {
+  scroll-behavior: smooth;
 }
 
-html { scroll-behavior: smooth; }
+body {
+  max-width: 100%;
+  margin: 20px auto;
+  padding: 0 12px 40px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.12);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
 /* Tema escuro */
 body.dark-mode {
@@ -37,9 +39,32 @@ body.dark-mode select {
   border-color: #555;
 }
 
-/* Botão de tema */
+/* Header */
+header {
+  text-align: center;
+  padding: 30px 20px 20px;
+  border-bottom: 3px solid #4caf50;
+}
+header h1 {
+  font-size: 2rem;
+  color: #388e3c;
+  margin-bottom: 6px;
+  letter-spacing: 2px;
+  font-weight: 900;
+}
+header p {
+  font-size: 1rem;
+  color: #556b2f;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+/* Botão tema */
 .tema-btn {
-  margin-top: 15px;
+  margin: 10px auto;
+  display: block;
+  width: 90%;
+  max-width: 200px;
   padding: 8px 16px;
   cursor: pointer;
   border-radius: 12px;
@@ -53,48 +78,38 @@ body.dark-mode select {
   background: #388e3c;
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 40px 20px 20px;
-  border-bottom: 3px solid #4caf50;
-}
-header h1 {
-  font-size: 3rem;
-  color: #388e3c;
-  margin-bottom: 8px;
-  letter-spacing: 3px;
-  font-weight: 900;
-}
-header p {
-  font-size: 1.2rem;
-  color: #556b2f;
-  font-weight: 600;
-  letter-spacing: 0.6px;
-}
-
 /* Filtros */
 #busca-filtro {
   text-align: center;
   margin-bottom: 20px;
 }
-#input-busca, #filtro-calorias, #filtro-tipo {
-  width: 180px;
+#input-busca,
+#filtro-tipo {
+  width: 90%;
+  max-width: 250px;
   padding: 10px 14px;
-  margin: 5px;
+  margin: 5px auto;
+  display: block;
   border-radius: 20px;
   border: 2px solid #4caf50;
 }
 
-/* Tabela cardápio */
+/* Cardápio */
+#cardapio-section {
+  overflow-x: auto;
+  margin-bottom: 20px;
+}
+
 .tabela-cardapio {
   width: 100%;
+  min-width: 600px;
   border-collapse: separate;
   border-spacing: 0 12px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   font-size: 1.05rem;
 }
-.tabela-cardapio th, .tabela-cardapio td {
+.tabela-cardapio th,
+.tabela-cardapio td {
   text-align: center;
   padding: 12px;
   background-color: #eaf4ea;
@@ -121,35 +136,35 @@ header p {
   font-weight: 600;
   margin-top: 10px;
 }
-body.dark-mode .feedback { color: #ff6f61; }
+body.dark-mode .feedback {
+  color: #ff6f61;
+}
 
-/* Responsividade para celulares */
-@media (max-width: 600px) {
-  body {
-    margin: 20px 12px 40px;
-    padding: 0 12px 40px;
-  }
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 1rem;
+  color: #777;
+  border-top: 1px solid #c6d7c6;
+  font-weight: 500;
+}
+
+/* Media queries para celular */
+@media (max-width: 500px) {
   header h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
   header p {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
-  #input-busca, #filtro-calorias, #filtro-tipo {
-    width: 100%;
-    margin: 8px 0;
-  }
-  .tema-btn {
-    width: 100%;
-    margin-top: 10px;
-  }
-  .tabela-cardapio th, .tabela-cardapio td {
+  .tabela-cardapio th,
+  .tabela-cardapio td {
     padding: 8px;
     font-size: 0.9rem;
   }
-}
-
-/* Tornar tabela rolável horizontalmente em telas pequenas */
-#cardapio-section {
-  overflow-x: auto;
+  #input-busca,
+  #filtro-tipo {
+    max-width: 90%;
+  }
 }
