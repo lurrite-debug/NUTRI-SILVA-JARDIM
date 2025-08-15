@@ -1,27 +1,27 @@
 {
   "alimentos": [
     {
-      "nome": "Arroz Integral",
-      "calorias": 180,
-      "proteinas": 4,
-      "carboidratos": 37,
+      "nome": "Arroz e feijão",
+      "calorias": 130,
+      "proteinas": 6,
+      "carboidratos": 21,
       "gorduras": 1,
       "tipo": "Massa"
     },
     {
-      "nome": "Frango Grelhado",
-      "calorias": 250,
-      "proteinas": 30,
-      "carboidratos": 0,
-      "gorduras": 10,
+      "nome": "Strognoff de frango",
+      "calorias": 200,
+      "proteinas": 16,
+      "carboidratos": 4,
+      "gorduras": 8,
       "tipo": "Carne"
     },
     {
-      "nome": "Salada de Alface",
-      "calorias": 50,
+      "nome": "Batata rústica assada",
+      "calorias": 153,
       "proteinas": 2,
-      "carboidratos": 4,
-      "gorduras": 0,
+      "carboidratos": 26,
+      "gorduras": 4,
       "tipo": "Vegetal/Fruta"
     }
   ]
