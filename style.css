@@ -7,6 +7,7 @@
   color: #2e3a2f;
   background-color: #f9fbf9;
 }
+
 body {
   max-width: 900px;
   margin: 50px auto 80px;
@@ -16,6 +17,7 @@ body {
   box-shadow: 0 8px 24px rgba(46, 125, 50, 0.12);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
 html { scroll-behavior: smooth; }
 
 /* Tema escuro */
@@ -34,6 +36,8 @@ body.dark-mode select {
   color: #eee;
   border-color: #555;
 }
+
+/* Botão de tema */
 .tema-btn {
   margin-top: 15px;
   padding: 8px 16px;
@@ -96,9 +100,18 @@ header p {
   background-color: #eaf4ea;
   border-radius: 12px;
 }
-.tabela-cardapio th { background-color: #4caf50; color: #fff; cursor: pointer; }
-.tabela-cardapio tbody tr:hover td { transform: scale(1.02); transition: transform 0.2s ease; }
-.prato-do-dia { border: 3px solid #ffb400 !important; }
+.tabela-cardapio th {
+  background-color: #4caf50;
+  color: #fff;
+  cursor: pointer;
+}
+.tabela-cardapio tbody tr:hover td {
+  transform: scale(1.02);
+  transition: transform 0.2s ease;
+}
+.prato-do-dia {
+  border: 3px solid #ffb400 !important;
+}
 
 /* Feedback busca */
 .feedback {
@@ -109,3 +122,34 @@ header p {
   margin-top: 10px;
 }
 body.dark-mode .feedback { color: #ff6f61; }
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+  body {
+    margin: 20px 12px 40px;
+    padding: 0 12px 40px;
+  }
+  header h1 {
+    font-size: 2rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  #input-busca, #filtro-calorias, #filtro-tipo {
+    width: 100%;
+    margin: 8px 0;
+  }
+  .tema-btn {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .tabela-cardapio th, .tabela-cardapio td {
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Tornar tabela rolável horizontalmente em telas pequenas */
+#cardapio-section {
+  overflow-x: auto;
+}

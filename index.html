@@ -18,31 +18,33 @@
     <h2 id="data-hoje"></h2>
   </section>
 
-  <section id="busca-filtro">
-    <input type="text" id="input-busca" placeholder="Buscar prato..." />
-    <select id="filtro-calorias">
-      <option value="">Todas calorias</option>
-      <option value="500">Até 500 kcal</option>
-      <option value="700">Até 700 kcal</option>
-      <option value="1000">Até 1000 kcal</option>
-    </select>
-    <select id="filtro-tipo">
-      <option value="">Todos tipos</option>
-      <option value="Carne">Carne</option>
-      <option value="Vegetal">Vegetal</option>
-      <option value="Massa">Massa</option>
-    </select>
-  </section>
+<section id="busca-filtro">
+  <input type="text" id="input-busca" placeholder="Buscar prato..." />
+  <select id="filtro-calorias">
+    <option value="">Filtrar por calorias</option>
+    <option value="500">Até 500 kcal</option>
+    <option value="700">Até 700 kcal</option>
+    <option value="1000">Até 1000 kcal</option>
+  </select>
+  <select id="filtro-tipo">
+    <option value="">Todos tipos</option>
+    <option value="Carne">Carne</option>
+    <option value="Vegetal/Fruta">Vegetal</option>
+    <option value="Massa">Massa</option>
+  </select>
+</section>
+
+</section>
 
   <section id="cardapio-section">
     <table id="cardapio" class="tabela-cardapio">
       <thead>
         <tr>
-          <th data-sort="nome">Prato ⬍</th>
-          <th data-sort="calorias">Calorias ⬍</th>
-          <th data-sort="proteinas">Proteínas (g) ⬍</th>
-          <th data-sort="carboidratos">Carboidratos (g) ⬍</th>
-          <th data-sort="gorduras">Gorduras (g) ⬍</th>
+          <th data-sort="nome">Prato (100g)⬍</th>
+          <th data-sort="calorias">Calorias(100g) ⬍</th>
+          <th data-sort="proteinas">Proteínas (100g) ⬍</th>
+          <th data-sort="carboidratos">Carboidratos (100g) ⬍</th>
+          <th data-sort="gorduras">Gorduras (100g) ⬍</th>
         </tr>
       </thead>
       <tbody>
@@ -53,7 +55,7 @@
   </section>
 
   <footer>
-    <p>© 2025 Escola Silva Jardim - Nutri Jardim</p>
+    <p>© 2025 Lucas-Pedro-Caio-Bianca - Nutri Jardim</p>
   </footer>
 </body>
 </html>
