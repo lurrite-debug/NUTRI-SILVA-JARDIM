@@ -1,0 +1,28 @@
+{
+  "alimentos": [
+    {
+      "nome": "MASSA DE QUINTA",
+      "calorias": 130,
+      "proteinas": 6,
+      "carboidratos": 21,
+      "gorduras": 1,
+      "tipo": "Massa"
+    },
+    {
+      "nome": "MISTURA DE QUINTA",
+      "calorias": 200,
+      "proteinas": 16,
+      "carboidratos": 4,
+      "gorduras": 8,
+      "tipo": "Carne"
+    },
+    {
+      "nome": "VEGETAL DE QUINTA",
+      "calorias": 153,
+      "proteinas": 2,
+      "carboidratos": 26,
+      "gorduras": 4,
+      "tipo": "Vegetal/Fruta"
+    }
+  ]
+}
