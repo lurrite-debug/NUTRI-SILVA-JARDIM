@@ -82,7 +82,7 @@ function escapeHtml(str = '') {
 
 function selecionarEmoji(tipo) {
   switch ((tipo || '').toLowerCase()) {
-    case 'carne': return '🍖';
+    case 'mistura': return '🍖';
     case 'vegetal/fruta': return '🥦';
     case 'massa': return '🍝';
     default: return '🍽️';
