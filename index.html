@@ -5,58 +5,71 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nutri Jardim - Cardápio</title>
   <link rel="stylesheet" href="style.css" />
-  <script type="module" src="script.js"></script>
+  <script type="module" src="script.js" defer></script>
 </head>
 <body>
-  <header>
-    <h1>Nutri Jardim</h1>
-    <p>Tabela nutricional do almoço da escola Silva Jardim</p>
-    <button id="btn-tema" class="tema-btn">🌙 Tema Escuro</button>
+  <header class="site-header">
+    <div class="brand">
+      <!-- Logotipo minimalista (SVG) -->
+      <svg class="logo" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+        <path d="M32 6c-7 0-16 7-16 16 0 9 8 18 16 26 8-8 16-17 16-26C48 13 39 6 32 6z" fill="#4caf50"/>
+        <circle cx="20" cy="22" r="3" fill="#66bb6a"/>
+      </svg>
+      <div class="brand-text">
+        <h1>Nutri Jardim</h1>
+        <p>Cardápio • Tabela nutricional do almoço da escola Silva Jardim</p>
+      </div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-tema" class="tema-btn" aria-label="Alternar tema">🌙 Tema</button>
+    </div>
   </header>
 
-  <section id="info-dia">
-    <h2 id="data-hoje"></h2>
-  </section>
+  <main class="main-content">
+    <section id="info-dia" class="info-dia">
+      <h2 id="data-hoje"></h2>
+    </section>
 
-<section id="busca-filtro">
-  <input type="text" id="input-busca" placeholder="Buscar prato..." />
-  <select id="filtro-calorias">
-    <option value="">Filtrar por calorias</option>
-    <option value="100">Até 100 kcal</option>
-    <option value="200">Até 200 kcal</option>
-    <option value="300">Até 300 kcal</option>
-  </select>
-  <select id="filtro-tipo">
-    <option value="">Todos tipos</option>
-    <option value="Carne">Carne</option>
-    <option value="Vegetal/Fruta">Vegetal</option>
-    <option value="Massa">Massa</option>
-  </select>
-</section>
+    <section id="busca-filtro" class="busca-filtro">
+      <div class="search-row">
+        <label class="search-field">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input type="text" id="input-busca" placeholder="Buscar prato..." />
+        </label>
 
-</section>
+        <select id="filtro-calorias" aria-label="Filtrar por calorias">
+          <option value="">Filtrar por calorias</option>
+          <option value="100">Até 100 kcal</option>
+          <option value="200">Até 200 kcal</option>
+          <option value="300">Até 300 kcal</option>
+        </select>
 
-  <section id="cardapio-section">
-    <table id="cardapio" class="tabela-cardapio">
-      <thead>
-        <tr>
-          <th data-sort="nome">Prato (100g)⬍</th>
-          <th data-sort="calorias">Calorias(100g) ⬍</th>
-          <th data-sort="proteinas">Proteínas (100g) ⬍</th>
-          <th data-sort="carboidratos">Carboidratos (100g) ⬍</th>
-          <th data-sort="gorduras">Gorduras (100g) ⬍</th>
-        </tr>
-      </thead>
-      <tbody>
-        <!-- Linhas do cardápio são inseridas aqui via JS -->
-      </tbody>
-    </table>
-    <div id="feedback-busca" class="feedback"></div>
-  </section>
+        <select id="filtro-tipo" aria-label="Filtrar por tipo">
+          <option value="">Todos os tipos</option>
+          <option value="Carne">Carne</option>
+          <option value="Vegetal/Fruta">Vegetal/Fruta</option>
+          <option value="Massa">Massa</option>
+        </select>
+
+        <select id="sort-by" aria-label="Ordenar por">
+          <option value="nome">Ordenar: Nome</option>
+          <option value="calorias">Ordenar: Calorias</option>
+        </select>
+      </div>
+
+      <div id="feedback-busca" class="feedback" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="cardapio-section" class="cardapio-section">
+      <div id="cards-container" class="cards-container" aria-live="polite">
+        <!-- Cards são inseridos aqui via JS -->
+      </div>
+    </section>
+  </main>
 
   <footer>
     <p>© 2025 Lucas-Pedro-Caio-Bianca - Nutri Jardim</p>
   </footer>
 </body>
 </html>
-<!-- jksdjskdj-->

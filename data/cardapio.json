@@ -1,7 +1,7 @@
 {
   "alimentos": [
     {
-      "nome": "Arroz e feijão",
+      "nome": "MASSA DE QUINTA",
       "calorias": 130,
       "proteinas": 6,
       "carboidratos": 21,
@@ -9,7 +9,7 @@
       "tipo": "Massa"
     },
     {
-      "nome": "Strognoff de frango",
+      "nome": "MISTURA DE QUINTA",
       "calorias": 200,
       "proteinas": 16,
       "carboidratos": 4,
@@ -17,7 +17,7 @@
       "tipo": "Carne"
     },
     {
-      "nome": "Batata rústica assada",
+      "nome": "VEGETAL DE QUINTA",
       "calorias": 153,
       "proteinas": 2,
       "carboidratos": 26,

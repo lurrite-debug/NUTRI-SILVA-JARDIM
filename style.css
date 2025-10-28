@@ -1,171 +1,262 @@
-/* Reset e básico */
+/* ---------------------------
+   RESET & BASE
+----------------------------*/
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #2e3a2f;
-  background-color: #f9fbf9;
+  font-family: "Inter", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease, box-shadow 0.25s ease, transform 0.25s ease;
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
-  max-width: 100%;
-  margin: 20px auto;
-  padding: 0 12px 40px;
-  background-color: #ffffff;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px rgba(46, 125, 50, 0.12);
-  transition: background-color 0.3s ease, color 0.3s ease;
+  max-width: 1100px;
+  margin: 36px auto;
+  padding: 24px;
+  background: linear-gradient(180deg,#f8faf9 0%, #f1f6f2 100%);
+  color: #223022;
+  border-radius: 14px;
+  box-shadow: 0 8px 30px rgba(12, 45, 12, 0.06);
+  -webkit-font-smoothing:antialiased;
 }
 
-/* Tema escuro */
-body.dark-mode {
-  background-color: #1c1c1c;
-  color: #eee;
-}
-body.dark-mode table th,
-body.dark-mode table td {
-  background-color: #333;
-  color: #eee;
-}
-body.dark-mode input,
-body.dark-mode select {
-  background-color: #333;
-  color: #eee;
-  border-color: #555;
+/* ---------------------------
+   HEADER / BRAND
+----------------------------*/
+.site-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  padding-bottom: 18px;
+  border-bottom: 1px solid rgba(34,48,34,0.08);
 }
 
-/* Header */
-header {
-  text-align: center;
-  padding: 30px 20px 20px;
-  border-bottom: 3px solid #4caf50;
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 14px;
 }
-header h1 {
-  font-size: 2rem;
-  color: #388e3c;
-  margin-bottom: 6px;
-  letter-spacing: 2px;
-  font-weight: 900;
+.logo { width: 56px; height: 56px; border-radius: 8px; box-shadow: 0 4px 10px rgba(34,48,34,0.06); }
+.brand-text h1 {
+  font-size: 1.5rem;
+  color: #2e7d32;
+  letter-spacing: 0.6px;
+  font-weight: 800;
 }
-header p {
-  font-size: 1rem;
-  color: #556b2f;
-  font-weight: 600;
-  letter-spacing: 0.5px;
+.brand-text p {
+  font-size: 0.9rem;
+  color: #4a5b46;
+  margin-top: 2px;
 }
 
-/* Botão tema */
+/* ---------------------------
+   THEME BUTTON
+----------------------------*/
 .tema-btn {
-  margin: 10px auto;
-  display: block;
-  width: 90%;
-  max-width: 200px;
-  padding: 8px 16px;
-  cursor: pointer;
-  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 10px;
   border: none;
-  background: #4caf50;
-  color: white;
-  font-weight: 600;
-  transition: background 0.3s ease;
-}
-.tema-btn:hover {
-  background: #388e3c;
-}
-
-/* Filtros */
-#busca-filtro {
-  text-align: center;
-  margin-bottom: 20px;
-}
-#input-busca,
-#filtro-tipo {
-  width: 90%;
-  max-width: 250px;
-  padding: 10px 14px;
-  margin: 5px auto;
-  display: block;
-  border-radius: 20px;
-  border: 2px solid #4caf50;
-}
-
-/* Cardápio */
-#cardapio-section {
-  overflow-x: auto;
-  margin-bottom: 20px;
-}
-
-.tabela-cardapio {
-  width: 100%;
-  min-width: 600px;
-  border-collapse: separate;
-  border-spacing: 0 12px;
-  margin-bottom: 10px;
-  font-size: 1.05rem;
-}
-.tabela-cardapio th,
-.tabela-cardapio td {
-  text-align: center;
-  padding: 12px;
-  background-color: #eaf4ea;
-  border-radius: 12px;
-}
-.tabela-cardapio th {
-  background-color: #4caf50;
+  background: linear-gradient(90deg, #4caf50, #43a047);
   color: #fff;
-  cursor: pointer;
-}
-.tabela-cardapio tbody tr:hover td {
-  transform: scale(1.02);
-  transition: transform 0.2s ease;
-}
-.prato-do-dia {
-  border: 3px solid #ffb400 !important;
-}
-
-/* Feedback busca */
-.feedback {
-  text-align: center;
-  font-size: 1.1rem;
-  color: #e53935;
   font-weight: 600;
-  margin-top: 10px;
+  cursor: pointer;
+  box-shadow: 0 6px 18px rgba(67,160,71,0.12);
 }
-body.dark-mode .feedback {
-  color: #ff6f61;
+.tema-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(67,160,71,0.14); }
+
+/* ---------------------------
+   INFO E FILTROS
+----------------------------*/
+.info-dia { margin: 18px 0; text-align: left; }
+.info-dia h2 { font-weight: 700; color: #2f5130; }
+
+.busca-filtro { margin: 18px 0 26px; }
+.search-row {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.search-field {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  flex: 1 1 260px;
+  max-width: 420px;
+  background: #fff;
+  padding: 6px 10px;
+  border-radius: 12px;
+  border: 1px solid rgba(34,48,34,0.06);
+  box-shadow: 0 6px 20px rgba(12, 45, 12, 0.03);
+}
+.search-field input {
+  border: none;
+  outline: none;
+  padding: 8px;
+  font-size: 0.95rem;
+  background: transparent;
+  color: inherit;
+}
+.search-icon { font-size: 1.05rem; }
+
+/* selects */
+.search-row select {
+  padding: 9px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(34,48,34,0.08);
+  background: #fff;
+  min-width: 160px;
+  font-size: 0.95rem;
 }
 
-/* Footer */
+/* feedback */
+.feedback {
+  width: 100%;
+  margin-top: 10px;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+/* ---------------------------
+   CARDS LAYOUT
+----------------------------*/
+.cardapio-section { margin-top: 12px; }
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 16px;
+}
+
+/* card */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 14px;
+  box-shadow: 0 6px 20px rgba(18, 40, 18, 0.04);
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  transform-origin: center;
+  opacity: 0;
+  transform: translateY(8px) scale(0.995);
+  animation: cardIn 420ms ease forwards;
+  position: relative;
+  overflow: hidden;
+}
+@keyframes cardIn {
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+.card .emoji {
+  font-size: 2.1rem;
+  width: 56px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background: linear-gradient(180deg,#f1fbf1 0%,#e8f6e8 100%);
+  box-shadow: 0 4px 14px rgba(70, 140, 70, 0.06);
+  flex-shrink: 0;
+}
+
+.card .info {
+  flex: 1;
+}
+.card .nome {
+  font-weight: 700;
+  color: #213a22;
+  font-size: 1.02rem;
+  margin-bottom: 6px;
+}
+.card .tipo {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: rgba(46,125,50,0.08);
+  color: #3b5e3b;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.nutri {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #405a44;
+}
+.nutri .item { background: rgba(14, 56, 14, 0.03); padding: 6px 8px; border-radius: 8px; font-weight: 600; }
+
+/* prato do dia badge */
+.prato-badge {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  background: linear-gradient(90deg,#ffd54a,#ffb300);
+  color: #4a2b00;
+  padding: 6px 8px;
+  border-radius: 999px;
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(255, 181, 0, 0.18);
+  transform: rotate(-6deg);
+  animation: pulseBadge 2.2s ease-in-out infinite;
+}
+@keyframes pulseBadge {
+  0%,100% { transform: rotate(-6deg) translateY(0); }
+  50% { transform: rotate(-6deg) translateY(-3px); }
+}
+
+/* hover */
+.card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(12, 45, 12, 0.09); }
+
+/* prato-do-dia destaque visual */
+.card.prato-do-dia { border: 2px solid rgba(255, 181, 0, 0.18); background: linear-gradient(180deg,#fffaf0 0%, #ffffff 100%); }
+
+/* ---------------------------
+   FOOTER
+----------------------------*/
 footer {
   text-align: center;
-  padding: 20px 10px;
-  font-size: 1rem;
-  color: #777;
-  border-top: 1px solid #c6d7c6;
-  font-weight: 500;
+  padding: 18px 10px;
+  font-size: 0.95rem;
+  color: #6b7767;
+  margin-top: 30px;
+  border-top: 1px solid rgba(34,48,34,0.06);
 }
 
-/* Media queries para celular */
-@media (max-width: 500px) {
-  header h1 {
-    font-size: 1.6rem;
-  }
-  header p {
-    font-size: 0.9rem;
-  }
-  .tabela-cardapio th,
-  .tabela-cardapio td {
-    padding: 8px;
-    font-size: 0.9rem;
-  }
-  #input-busca,
-  #filtro-tipo {
-    max-width: 90%;
-  }
+/* ---------------------------
+   TEMA ESCURO
+----------------------------*/
+body.dark-mode {
+  background: linear-gradient(180deg,#0f1111 0%, #151617 100%);
+  color: #e6e6e6;
+  box-shadow: 0 8px 30px rgba(0,0,0,0.5);
 }
-/* skjdsdkhj
+body.dark-mode .brand-text h1 { color: #8ad08a; }
+body.dark-mode .brand-text p { color: #b7cbb7; }
+body.dark-mode .search-field, body.dark-mode .search-row select, body.dark-mode .card {
+  background: #151515;
+  border-color: rgba(255,255,255,0.04);
+  color: #eaeaea;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.45);
+}
+body.dark-mode .card .emoji { background: linear-gradient(180deg,#122412 0%, #0f1a10 100%); }
+body.dark-mode .card .nome { color: #e6f6e6; }
+body.dark-mode .card .tipo { background: rgba(50,120,50,0.09); color: #bfe1b4; }
+body.dark-mode .tema-btn { filter: brightness(1.05); }
+
+/* ---------------------------
+   RESPONSIVE
+----------------------------*/
+@media (max-width: 680px) {
+  .search-row { gap: 8px; }
+  .card { padding: 12px; }
+  .brand-text h1 { font-size: 1.25rem; }
+}
