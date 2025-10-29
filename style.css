@@ -260,3 +260,17 @@ body.dark-mode .tema-btn { filter: brightness(1.05); }
   .card { padding: 12px; }
   .brand-text h1 { font-size: 1.25rem; }
 }
+/* Logotipo imagem */
+.logo-img {
+  height: 90px;
+  width: auto;
+  border-radius: 12px;
+  object-fit: contain;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
