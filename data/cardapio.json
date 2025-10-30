@@ -4,26 +4,27 @@
       "nome": "Arroz e Feijão",
       "calorias": 130,
       "proteinas": 6,
-      "carboidratos": 21,
-      "gorduras": 1,
+      "carboidratos": 41,
+      "gorduras": 4,
       "tipo": "Massa"
     },
     {
       "nome": "Carne moída",
       "calorias": 200,
-      "proteinas": 16,
-      "carboidratos": 4,
-      "gorduras": 8,
+      "proteinas": 25,
+      "carboidratos": 1g,
+      "gorduras": 6,
       "tipo": "Mistura"
     },
     {
       "nome": "Beterraba",
-      "calorias": 153,
-      "proteinas": 2,
-      "carboidratos": 26,
-      "gorduras": 4,
+      "calorias": 45,
+      "proteinas": 1.8,
+      "carboidratos": 11,
+      "gorduras": 0.1,
       "tipo": "Vegetal/Fruta"
     }
   ]
 }
+
 
