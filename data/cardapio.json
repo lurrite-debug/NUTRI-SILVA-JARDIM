@@ -19,12 +19,13 @@
     {
       "nome": "Beterraba",
       "calorias": 45,
-      "proteinas": 1.8,
+      "proteinas": 1,
       "carboidratos": 11,
-      "gorduras": 0.1,
+      "gorduras": 0,
       "tipo": "Vegetal/Fruta"
     }
   ]
 }
+
 
 
