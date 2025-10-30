@@ -9,7 +9,7 @@
       "tipo": "Massa"
     },
     {
-      "nome": "Ovo",
+      "nome": "Carne moída",
       "calorias": 200,
       "proteinas": 16,
       "carboidratos": 4,
@@ -17,7 +17,7 @@
       "tipo": "Mistura"
     },
     {
-      "nome": "Salada",
+      "nome": "Beterraba",
       "calorias": 153,
       "proteinas": 2,
       "carboidratos": 26,
@@ -26,3 +26,4 @@
     }
   ]
 }
+
