@@ -6,7 +6,7 @@
       "proteinas": 6,
       "carboidratos": 41,
       "gorduras": 4,
-      "tipo": "Massa"
+      "tipo": "Carboidrato"
     },
     {
       "nome": "Carne moída",
@@ -14,7 +14,7 @@
       "proteinas": 25,
       "carboidratos": 1,
       "gorduras": 6,
-      "tipo": "Mistura"
+      "tipo": "Proteina"
     },
     {
       "nome": "Beterraba",
@@ -26,6 +26,7 @@
     }
   ]
 }
+
 
 
 
