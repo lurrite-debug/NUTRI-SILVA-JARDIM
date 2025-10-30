@@ -12,7 +12,7 @@
       "nome": "Carne moída",
       "calorias": 200,
       "proteinas": 25,
-      "carboidratos": 1g,
+      "carboidratos": 1,
       "gorduras": 6,
       "tipo": "Mistura"
     },
@@ -26,6 +26,7 @@
     }
   ]
 }
+
 
 
 
