@@ -82,9 +82,9 @@ function escapeHtml(str = '') {
 
 function selecionarEmoji(tipo) {
   switch ((tipo || '').toLowerCase()) {
-    case 'mistura': return '🍖';
+    case 'proteina': return '🍖';
     case 'vegetal/fruta': return '🥦';
-    case 'massa': return '🍝';
+    case 'carboidrato': return '🍝';
     default: return '🍽️';
   }
 }
@@ -181,3 +181,4 @@ function debounce(fn, wait = 150) {
   let t;
   return (...args) => { clearTimeout(t); t = setTimeout(() => fn(...args), wait); };
 }
+
