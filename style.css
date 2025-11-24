@@ -1,6 +1,4 @@
-/* ---------------------------
-   RESET & BASE
-----------------------------*/
+/* Reset e estilo base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,9 +20,7 @@ body {
   -webkit-font-smoothing:antialiased;
 }
 
-/* ---------------------------
-   HEADER / BRAND
-----------------------------*/
+/* Cabeçalho / Marca */
 .site-header {
   display: flex;
   align-items: center;
@@ -52,9 +48,7 @@ body {
   margin-top: 2px;
 }
 
-/* ---------------------------
-   THEME BUTTON
-----------------------------*/
+/* Botão do tema */
 .tema-btn {
   display: inline-flex;
   align-items: center;
@@ -70,9 +64,7 @@ body {
 }
 .tema-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 22px rgba(67,160,71,0.14); }
 
-/* ---------------------------
-   INFO E FILTROS
-----------------------------*/
+/* Informações e filtros */
 .info-dia { margin: 18px 0; text-align: left; }
 .info-dia h2 { font-weight: 700; color: #2f5130; }
 
@@ -105,7 +97,6 @@ body {
 }
 .search-icon { font-size: 1.05rem; }
 
-/* selects */
 .search-row select {
   padding: 9px 12px;
   border-radius: 10px;
@@ -115,7 +106,6 @@ body {
   font-size: 0.95rem;
 }
 
-/* feedback */
 .feedback {
   width: 100%;
   margin-top: 10px;
@@ -123,9 +113,7 @@ body {
   font-weight: 600;
 }
 
-/* ---------------------------
-   CARDS LAYOUT
-----------------------------*/
+/* Layout dos cards */
 .cardapio-section { margin-top: 12px; }
 .cards-container {
   display: grid;
@@ -133,7 +121,6 @@ body {
   gap: 16px;
 }
 
-/* card */
 .card {
   background: #ffffff;
   border-radius: 12px;
@@ -149,6 +136,7 @@ body {
   position: relative;
   overflow: hidden;
 }
+
 @keyframes cardIn {
   to { opacity: 1; transform: translateY(0) scale(1); }
 }
@@ -166,9 +154,7 @@ body {
   flex-shrink: 0;
 }
 
-.card .info {
-  flex: 1;
-}
+.card .info { flex: 1; }
 .card .nome {
   font-weight: 700;
   color: #213a22;
@@ -194,7 +180,7 @@ body {
 }
 .nutri .item { background: rgba(14, 56, 14, 0.03); padding: 6px 8px; border-radius: 8px; font-weight: 600; }
 
-/* prato do dia badge */
+/* Badge de prato do dia */
 .prato-badge {
   position: absolute;
   right: 10px;
@@ -208,20 +194,25 @@ body {
   transform: rotate(-6deg);
   animation: pulseBadge 2.2s ease-in-out infinite;
 }
+
 @keyframes pulseBadge {
   0%,100% { transform: rotate(-6deg) translateY(0); }
   50% { transform: rotate(-6deg) translateY(-3px); }
 }
 
-/* hover */
-.card:hover { transform: translateY(-6px); box-shadow: 0 14px 36px rgba(12, 45, 12, 0.09); }
+/* Hover do card */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 36px rgba(12, 45, 12, 0.09);
+}
 
-/* prato-do-dia destaque visual */
-.card.prato-do-dia { border: 2px solid rgba(255, 181, 0, 0.18); background: linear-gradient(180deg,#fffaf0 0%, #ffffff 100%); }
+/* Destaque visual do prato do dia */
+.card.prato-do-dia {
+  border: 2px solid rgba(255, 181, 0, 0.18);
+  background: linear-gradient(180deg,#fffaf0 0%, #ffffff 100%);
+}
 
-/* ---------------------------
-   FOOTER
-----------------------------*/
+/* Rodapé */
 footer {
   text-align: center;
   padding: 18px 10px;
@@ -231,9 +222,7 @@ footer {
   border-top: 1px solid rgba(34,48,34,0.06);
 }
 
-/* ---------------------------
-   TEMA ESCURO
-----------------------------*/
+/* Tema escuro */
 body.dark-mode {
   background: linear-gradient(180deg,#0f1111 0%, #151617 100%);
   color: #e6e6e6;
@@ -241,7 +230,9 @@ body.dark-mode {
 }
 body.dark-mode .brand-text h1 { color: #8ad08a; }
 body.dark-mode .brand-text p { color: #b7cbb7; }
-body.dark-mode .search-field, body.dark-mode .search-row select, body.dark-mode .card {
+body.dark-mode .search-field,
+body.dark-mode .search-row select,
+body.dark-mode .card {
   background: #151515;
   border-color: rgba(255,255,255,0.04);
   color: #eaeaea;
@@ -252,15 +243,14 @@ body.dark-mode .card .nome { color: #e6f6e6; }
 body.dark-mode .card .tipo { background: rgba(50,120,50,0.09); color: #bfe1b4; }
 body.dark-mode .tema-btn { filter: brightness(1.05); }
 
-/* ---------------------------
-   RESPONSIVE
-----------------------------*/
+/* Responsividade */
 @media (max-width: 680px) {
   .search-row { gap: 8px; }
   .card { padding: 12px; }
   .brand-text h1 { font-size: 1.25rem; }
 }
-/* Logotipo imagem */
+
+/* Estilo da imagem do logotipo */
 .logo-img {
   height: 90px;
   width: auto;
@@ -274,3 +264,39 @@ body.dark-mode .tema-btn { filter: brightness(1.05); }
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
 }
+
+/* Estilo do título do dia e badge */
+.dia-semana-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 26px 0 14px;
+}
+
+.dia-semana {
+  font-size: 1.22rem;
+  font-weight: 800;
+  color: #2e7d32;
+  background: rgba(46,125,50,0.10);
+  padding: 6px 14px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+  letter-spacing: 0.5px;
+}
+
+.dia-badge {
+  display: inline-block;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: linear-gradient(90deg,#ffd54a,#ffb300);
+  color: #4a2b00;
+  font-weight: 800;
+  box-shadow: 0 6px 18px rgba(255, 181, 0, 0.18);
+  transform: rotate(-6deg);
+}
+
+/* Espaçamento entre dias */
+.section-dia { margin-bottom: 18px; }
+
+/* Garante que o grid siga o padrão */
+.section-dia .cards-container { margin-top: 8px; }

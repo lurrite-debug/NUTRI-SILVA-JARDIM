@@ -46,9 +46,10 @@
 
         <select id="filtro-tipo" aria-label="Filtrar por tipo">
           <option value="">Todos os tipos</option>
-          <option value="Proteina">Proteina</option>
-          <option value="Vegetal/Fruta">Vegetal/Fruta</option>
-          <option value="Carboidrato">Carboidrato</option>
+          <option value="Mistura">Mistura</option>
+          <option value="Vegetal">Vegetal</option>
+          <option value="Massa">Massa</option>
+          <option value="Fruta">Fruta</option>
         </select>
 
         <select id="sort-by" aria-label="Ordenar por">
@@ -59,6 +60,8 @@
 
       <div id="feedback-busca" class="feedback" role="status" aria-live="polite"></div>
     </section>
+<!-- Semana: cada dia será gerado dinamicamente pelo JS -->
+<section id="semana-container" class="semana-container"></section>
 
     <section id="cardapio-section" class="cardapio-section">
       <div id="cards-container" class="cards-container" aria-live="polite">
@@ -72,4 +75,3 @@
   </footer>
 </body>
 </html>
-

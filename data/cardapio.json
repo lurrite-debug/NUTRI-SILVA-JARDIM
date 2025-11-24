@@ -1,33 +1,98 @@
 {
-  "alimentos": [
-    {
-      "nome": "Arroz e Feijão",
-      "calorias": 130,
-      "proteinas": 6,
-      "carboidratos": 41,
-      "gorduras": 4,
-      "tipo": "Carboidrato"
-    },
-    {
-      "nome": "Carne moída",
-      "calorias": 200,
-      "proteinas": 25,
-      "carboidratos": 1,
-      "gorduras": 6,
-      "tipo": "Proteina"
-    },
-    {
-      "nome": "Beterraba",
-      "calorias": 45,
-      "proteinas": 1,
-      "carboidratos": 11,
-      "gorduras": 0,
-      "tipo": "Vegetal/Fruta"
-    }
-  ]
+  "semana": {
+    "segunda": [
+      {
+        "nome": "Suco de tamarindo",
+        "calorias": 80,
+        "proteinas": 0,
+        "carboidratos": 20,
+        "gorduras": 0,
+        "tipo": "Fruta"
+      },
+      {
+        "nome": "Algodão doce",
+        "calorias": 105,
+        "proteinas": 0,
+        "carboidratos": 26,
+        "gorduras": 0,
+        "tipo": "Fruta"
+      }
+    ],
+
+    "terca": [
+      {
+        "nome": "Pão do Jason",
+        "calorias": 150,
+        "proteinas": 4,
+        "carboidratos": 25,
+        "gorduras": 3,
+        "tipo": "Massa"
+      },
+      {
+        "nome": "Bicho-de-pé",
+        "calorias": 180,
+        "proteinas": 2,
+        "carboidratos": 30,
+        "gorduras": 6,
+        "tipo": "Massa"
+      }
+    ],
+
+    "quarta": [
+      {
+        "nome": "Pipoca em saco",
+        "calorias": 120,
+        "proteinas": 2,
+        "carboidratos": 18,
+        "gorduras": 5,
+        "tipo": "Massa"
+      },
+      {
+        "nome": "Costela",
+        "calorias": 250,
+        "proteinas": 18,
+        "carboidratos": 0,
+        "gorduras": 20,
+        "tipo": "Mistura"
+      }
+    ],
+
+    "quinta": [
+      {
+        "nome": "Cuscuz com leite e manteiga",
+        "calorias": 200,
+        "proteinas": 6,
+        "carboidratos": 32,
+        "gorduras": 8,
+        "tipo": "Massa"
+      },
+      {
+        "nome": "Empadão de frango",
+        "calorias": 300,
+        "proteinas": 12,
+        "carboidratos": 28,
+        "gorduras": 16,
+        "tipo": "Mistura"
+      }
+    ],
+
+    "sexta": [
+      {
+        "nome": "Lasanha do Garfield",
+        "calorias": 350,
+        "proteinas": 14,
+        "carboidratos": 40,
+        "gorduras": 18,
+        "tipo": "Massa"
+      },
+      {
+        "nome": "Ovo de codorna",
+        "calorias": 17,
+        "proteinas": 1,
+        "carboidratos": 0,
+        "gorduras": 1,
+        "tipo": "Mistura"
+      }
+    ]
+  }
 }
-
-
-
-
-
