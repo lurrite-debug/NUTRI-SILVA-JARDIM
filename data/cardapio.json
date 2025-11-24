@@ -2,97 +2,120 @@
   "semana": {
     "segunda": [
       {
-        "nome": "Suco de tamarindo",
-        "calorias": 80,
-        "proteinas": 0,
-        "carboidratos": 20,
-        "gorduras": 0,
-        "tipo": "Fruta"
+        "nome": "Arroz",
+        "calorias": 120,
+        "proteinas": 2,
+        "carboidratos": 26,
+        "gorduras": 1,
+        "tipo": "Massa"
       },
       {
-        "nome": "Algodão doce",
-        "calorias": 105,
-        "proteinas": 0,
-        "carboidratos": 26,
+        "nome": "Feijão",
+        "calorias": 90,
+        "proteinas": 6,
+        "carboidratos": 14,
         "gorduras": 0,
-        "tipo": "Fruta"
+        "tipo": "Mistura"
+      },
+      {
+        "nome": "Ovo mexido",
+        "calorias": 140,
+        "proteinas": 12,
+        "carboidratos": 1,
+        "gorduras": 10,
+        "tipo": "Mistura"
       }
     ],
 
     "terca": [
       {
-        "nome": "Pão do Jason",
-        "calorias": 150,
-        "proteinas": 4,
-        "carboidratos": 25,
+        "nome": "Macarrão ao alho",
+        "calorias": 210,
+        "proteinas": 7,
+        "carboidratos": 38,
         "gorduras": 3,
         "tipo": "Massa"
       },
       {
-        "nome": "Bicho-de-pé",
-        "calorias": 180,
-        "proteinas": 2,
-        "carboidratos": 30,
-        "gorduras": 6,
-        "tipo": "Massa"
+        "nome": "Frango grelhado",
+        "calorias": 160,
+        "proteinas": 30,
+        "carboidratos": 0,
+        "gorduras": 4,
+        "tipo": "Mistura"
       }
     ],
 
     "quarta": [
       {
-        "nome": "Pipoca em saco",
-        "calorias": 120,
-        "proteinas": 2,
-        "carboidratos": 18,
-        "gorduras": 5,
+        "nome": "Arroz integral",
+        "calorias": 110,
+        "proteinas": 3,
+        "carboidratos": 22,
+        "gorduras": 1,
         "tipo": "Massa"
       },
       {
-        "nome": "Costela",
-        "calorias": 250,
-        "proteinas": 18,
+        "nome": "Carne moída",
+        "calorias": 185,
+        "proteinas": 22,
         "carboidratos": 0,
-        "gorduras": 20,
+        "gorduras": 10,
         "tipo": "Mistura"
+      },
+      {
+        "nome": "Brócolis cozido",
+        "calorias": 55,
+        "proteinas": 4,
+        "carboidratos": 11,
+        "gorduras": 0,
+        "tipo": "Vegetal"
       }
     ],
 
     "quinta": [
       {
-        "nome": "Cuscuz com leite e manteiga",
-        "calorias": 200,
-        "proteinas": 6,
-        "carboidratos": 32,
-        "gorduras": 8,
+        "nome": "Purê de batata",
+        "calorias": 130,
+        "proteinas": 3,
+        "carboidratos": 24,
+        "gorduras": 3,
         "tipo": "Massa"
       },
       {
-        "nome": "Empadão de frango",
-        "calorias": 300,
-        "proteinas": 12,
-        "carboidratos": 28,
-        "gorduras": 16,
+        "nome": "Bife acebolado",
+        "calorias": 220,
+        "proteinas": 25,
+        "carboidratos": 2,
+        "gorduras": 12,
         "tipo": "Mistura"
       }
     ],
 
     "sexta": [
       {
-        "nome": "Lasanha do Garfield",
-        "calorias": 350,
-        "proteinas": 14,
-        "carboidratos": 40,
-        "gorduras": 18,
+        "nome": "Polenta",
+        "calorias": 160,
+        "proteinas": 3,
+        "carboidratos": 36,
+        "gorduras": 1,
         "tipo": "Massa"
       },
       {
-        "nome": "Ovo de codorna",
-        "calorias": 17,
-        "proteinas": 1,
+        "nome": "Peixe assado",
+        "calorias": 190,
+        "proteinas": 22,
         "carboidratos": 0,
-        "gorduras": 1,
+        "gorduras": 10,
         "tipo": "Mistura"
+      },
+      {
+        "nome": "Salada de alface",
+        "calorias": 15,
+        "proteinas": 1,
+        "carboidratos": 3,
+        "gorduras": 0,
+        "tipo": "Vegetal"
       }
     ]
   }
-}
